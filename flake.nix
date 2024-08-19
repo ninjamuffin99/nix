@@ -29,6 +29,7 @@
         pkgs.vim
         pkgs.home-manager
         pkgs.alejandra
+        pkgs.neovim
       ];
 
       homebrew = {
