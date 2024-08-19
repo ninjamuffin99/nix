@@ -1,22 +1,18 @@
-imports = [ <home-manager/nix-darwin> ];
-
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [<home-manager/nix-darwin>];
 
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
-  environment.systemPackages =
-    [ pkgs.vim
-    ];
+  environment.systemPackages = [
+    pkgs.vim
+  ];
 
-
-  nix.extraOptions = ''
-    auto-optimise-store = true
-    experimental-features = nix-command flakes
-  '' + lib.optionalString (pkgs.system == "aarch64-darwin") ''
-    extra-platforms = x86_64-darwin aarch64-darwin
-  '';
+  nixpkgs.hostPlatform = "aarch64-darwin";
+  nix.settings.experimental-features = "nix-command flakes";
 
   # Use a custom configuration.nix location.
   # $ darwin-rebuild switch -I darwin-config=$HOME/.config/nixpkgs/darwin/configuration.nix
@@ -27,7 +23,7 @@ imports = [ <home-manager/nix-darwin> ];
   # nix.package = pkgs.nix;
 
   # Create /etc/zshrc that loads the nix-darwin environment.
-  programs.zsh.enable = true;  # default shell on catalina
+  programs.zsh.enable = true; # default shell on catalina
   programs.fish.enable = true;
 
   # Used for backwards compatibility, please read the changelog before changing.
@@ -35,7 +31,7 @@ imports = [ <home-manager/nix-darwin> ];
   system.stateVersion = 4;
 
   users.users.mofin = {
-        name = "Cameron Taylor";
-        home = "/Users/mofin";
-    };
+    name = "Cameron Taylor";
+    home = "/Users/mofin";
+  };
 }
