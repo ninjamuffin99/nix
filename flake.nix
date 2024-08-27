@@ -55,7 +55,6 @@
           "git"
           "git-delta"
           "git-filter-repo"
-          "git-game"
           "git-lfs"
           "git-town"
           "gitoxide"
@@ -104,6 +103,7 @@
           "rustdesk"
           "wezterm"
           "anki"
+          "netnewswire"
         ];
       };
 
@@ -122,6 +122,7 @@
       programs.fish = with pkgs.fishPlugins; {
         enable = true;
       };
+
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
