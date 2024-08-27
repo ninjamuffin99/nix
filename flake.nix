@@ -73,9 +73,6 @@
           "opencv"
           "oxipng"
           "pcre"
-          "pillow"
-          "pipx"
-          "python-tk@3.12"
           "qt@5"
           "railway"
           "rust"
@@ -104,6 +101,7 @@
           "obs"
           "reaper"
           "wezterm"
+          "anki"
         ];
       };
 
