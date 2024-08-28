@@ -31,63 +31,71 @@
         pkgs.alejandra
         pkgs.neovim
         pkgs.net-news-wire
+        pkgs.fzf
+        pkgs.eza
+        pkgs.git
+        pkgs.yt-dlp
+        pkgs.zoxide
+        pkgs.bottom
+        pkgs.bat
+        pkgs.htop
+        pkgs.kismet
       ];
 
       homebrew = {
         enable = true;
         onActivation.cleanup = "uninstall";
+        onActivation.autoUpdate = true;
+        onActivation.upgrade = true;
 
         taps = [];
         brews = [
-          "bat"
-          "bottom"
           "ccache"
           "cmake"
-          "cowsay"
           "dust"
-          "earthly"
           "emscripten"
-          "eza"
           "ffmpeg"
-          "flyctl"
-          "fossil"
-          "fzf"
-          "git"
           "git-delta"
           "git-filter-repo"
           "git-lfs"
           "git-town"
           "gitoxide"
-          "htop"
           "jpeg"
+          "jpeg-turbo"
+          "libjpeg-turbo"
           "jq"
           "libmypaint"
           "libusb"
+          "libuv"
+          "libpng"
+          "libogg"
+          "libvorbis"
+          "hashlink"
           "mbedtls@2"
           "nano"
           "neofetch"
           "neovim"
           "ninja"
-          "nyancat"
           "openal-soft"
           "opencv"
+          "openssl"
           "oxipng"
           "pcre"
           "qt@5"
           "railway"
           "rust"
+          "sdl2"
           "sapling"
           "sevenzip"
           "spicetify-cli"
           "starship"
           "sugarjar"
+          "sqlite"
           "wiggle"
           "yarn"
-          "yt-dlp"
           "zbar"
           "zlib"
           "zola"
-          "zoxide"
           "zsh-autosuggestions"
           "fd"
         ];
@@ -122,7 +130,6 @@
       programs.fish = with pkgs.fishPlugins; {
         enable = true;
       };
-
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
