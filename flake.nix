@@ -33,13 +33,11 @@
         pkgs.net-news-wire
         pkgs.fzf
         pkgs.eza
-        pkgs.git
         pkgs.yt-dlp
         pkgs.zoxide
         pkgs.bottom
         pkgs.bat
         pkgs.htop
-        pkgs.kismet
       ];
 
       homebrew = {
@@ -55,6 +53,7 @@
           "dust"
           "emscripten"
           "ffmpeg"
+          "git"
           "git-delta"
           "git-filter-repo"
           "git-lfs"
