@@ -171,7 +171,7 @@
       hostname = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
-          ./configuration.nix
+          ./nix-darwin-configuration.nix
 
           home-manager.darwinModules.home-manager
           {
