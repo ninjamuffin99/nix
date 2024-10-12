@@ -6,6 +6,8 @@
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
 
+  home.homeDirectory = "/Users/mofin";
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -19,6 +21,8 @@
   # environment.
   home.packages = with pkgs; [
     hello
+    neovim
+    git
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -40,6 +44,8 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+
+    ".gitconfig".source = ../dotfiles/.gitconfig;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
@@ -64,10 +70,4 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
-  programs.zsh = {
-    enable = true;
-    enableAutosuggestions = true;
-    enableCompletion = true;
-  };
 }

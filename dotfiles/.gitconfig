@@ -1,0 +1,64 @@
+[user]
+	name = Cameron Taylor
+	email = cameron.taylor.ninja@gmail.com
+[pull]
+	rebase = merges
+[submodule]
+	recurse = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[help]
+	autoCorrect = 10
+[merge]
+	conflictstyle = zdiff3
+[diff]
+	algorithm = histogram
+	submodule = log
+	colorMoved = default
+[status]
+	submoduleSummary = true
+[fetch]
+	prune = true
+	prunetags = true
+	parallel = 0
+[core]
+	excludesfile = /Users/mofin/.gitignore
+	pager = delta
+[branch]
+	sort = -committerdate
+[interactive]
+	diffFilter = delta --color-only --features=interactive 
+[delta]
+	navigate = true
+	side-by-side = true
+	true-color = always
+	map-styles = bold purple => syntax magenta, bold cyan => syntax blue
+	features = zebra-dark
+	hyperlinks = true
+	
+[delta "interactive"]
+    keep-plus-minus-markers = false
+
+[rebase]
+	autoSquash = true
+	missingCommitsCheck = error
+	updateRefs = true
+[rerere]
+	enabled = true
+[blame]
+	ignoreRevsFile = 
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[checkout]
+	workers = 1
