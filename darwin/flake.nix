@@ -39,6 +39,7 @@
         pkgs.bat
         pkgs.htop
         pkgs.difftastic
+        pkgs.jujutsu
       ];
 
       # Auto upgrade nix package and the daemon service.
@@ -88,7 +89,6 @@
             # arguments to home.nix
           }
         ];
-
       };
     };
 

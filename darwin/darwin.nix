@@ -18,12 +18,14 @@
 
     taps = [];
     brews = [
+      "xcodesorg/made/xcodes"
       "aria2"
       "brotli"
       "ccache"
       "cmake"
       "dust"
       "docker"
+      "neofetch"
       "earthly"
       "ffmpeg"
       "git-delta"
@@ -80,7 +82,7 @@
       "obs"
       "reaper"
       "rustdesk"
-      "wezterm"
+      "wezterm@nightly"
       "anki"
       "netnewswire"
       "zed"
