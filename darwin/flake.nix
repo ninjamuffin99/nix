@@ -40,6 +40,7 @@
         pkgs.htop
         pkgs.difftastic
         pkgs.jujutsu
+        pkgs.rustup
       ];
 
       # Auto upgrade nix package and the daemon service.
