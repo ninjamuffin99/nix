@@ -18,7 +18,6 @@
 
     taps = [];
     brews = [
-      "xcodesorg/made/xcodes"
       "aria2"
       "brotli"
       "ccache"

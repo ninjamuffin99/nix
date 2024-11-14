@@ -41,6 +41,7 @@
         pkgs.difftastic
         pkgs.jujutsu
         pkgs.rustup
+        pkgs.xcodes
       ];
 
       # Auto upgrade nix package and the daemon service.
