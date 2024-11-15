@@ -4,7 +4,7 @@
 [pull]
 	rebase = merges
 [submodule]
-	recurse = true
+	recurse = false
 [credential "https://github.com"]
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential

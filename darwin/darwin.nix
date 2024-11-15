@@ -56,7 +56,6 @@
       "qt@5"
       "railway"
       "sdl2"
-      "sapling"
       "sevenzip"
       "spicetify-cli"
       "starship"
@@ -69,6 +68,8 @@
       "zola"
       "zsh-autosuggestions"
       "fd"
+      "jj"
+      "node"
       "git-cliff"
     ];
     casks = [

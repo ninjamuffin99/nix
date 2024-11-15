@@ -39,7 +39,6 @@
         pkgs.bat
         pkgs.htop
         pkgs.difftastic
-        pkgs.jujutsu
         pkgs.rustup
         pkgs.xcodes
       ];
