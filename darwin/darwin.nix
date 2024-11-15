@@ -94,7 +94,7 @@
 
   # Use a custom configuration.nix location.
   # $ darwin-rebuild switch -I darwin-config=$HOME/.config/nixpkgs/darwin/configuration.nix
-  environment.darwinConfig = "$HOME/.config/nix/darwin";
+  # environment.darwinConfig = "$HOME/.config/nix/darwin";
 
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
