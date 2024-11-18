@@ -68,6 +68,7 @@
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
     # EDITOR = "emacs";
+    NPM_CONFIG_USERCONFIG = "${config.home.homeDirectory}/.npmrc";
   };
 
   # Let Home Manager install and manage itself.
