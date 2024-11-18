@@ -23,6 +23,7 @@
     hello
     neovim
     git
+    nodejs_22
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -46,6 +47,7 @@
     # ".screenrc".source = dotfiles/screenrc;
 
     ".gitconfig".source = ../dotfiles/.gitconfig;
+    ".npmrc".source = ../dotfiles/.npmrc;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''

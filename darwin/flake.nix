@@ -3,7 +3,7 @@
   description = "Darwin config";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.11-darwin";
 
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
@@ -44,9 +44,9 @@
       ];
 
       # Auto upgrade nix package and the daemon service.
-      # services.nix-daemon.enable = true;
+      services.nix-daemon.enable = true;
       nix.package = pkgs.nix;
-      nix.settings.trusted-users = ["root" "mofin"];
+      nix.settings.trusted-users = ["root" "mofin" "Cameron Taylor"];
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
@@ -91,6 +91,7 @@
             # arguments to home.nix
           }
         ];
+        specialArgs = {inherit inputs;};
       };
     };
 
