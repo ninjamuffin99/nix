@@ -90,6 +90,11 @@
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
           }
+          {
+            nixpkgs.overlays = [
+              (import ../overlays/fish.nix)
+            ];
+          }
         ];
         specialArgs = {inherit inputs;};
       };
