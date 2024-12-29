@@ -87,6 +87,8 @@
       "netnewswire"
       "zed"
       "betterdisplay"
+      "localsend"
+      "ghostty"
     ];
   };
 
