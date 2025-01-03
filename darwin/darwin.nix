@@ -53,6 +53,7 @@
       "opencv"
       "openssl"
       "oxipng"
+      "python"
       "pcre"
       "qt@5"
       "railway"
@@ -73,7 +74,6 @@
       "git-cliff"
     ];
     casks = [
-      "ableton-live-intro@11"
       "dolphin@dev"
       "love"
       "obsidian"
@@ -89,6 +89,7 @@
       "betterdisplay"
       "localsend"
       "ghostty"
+      "httpie"
     ];
   };
 
