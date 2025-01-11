@@ -70,7 +70,6 @@
       "zola"
       "zsh-autosuggestions"
       "fd"
-      "jj"
       "git-cliff"
     ];
     casks = [

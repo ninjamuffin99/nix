@@ -41,6 +41,7 @@
         pkgs.difftastic
         pkgs.rustup
         pkgs.xcodes
+        pkgs.jj
       ];
 
       # Auto upgrade nix package and the daemon service.
@@ -93,6 +94,7 @@
           {
             nixpkgs.overlays = [
               (import ../overlays/fish.nix)
+              (import ../overlays/jj.nix)
             ];
           }
         ];
