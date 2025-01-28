@@ -13,7 +13,7 @@
 
   homebrew = {
     enable = true;
-    onActivation.cleanup = "uninstall";
+    onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
 
@@ -100,7 +100,6 @@
 
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
-  # nix.package = pkgs.nix;
 
   # Create /etc/zshrc that loads the nix-darwin environment.
   programs.zsh.enable = true; # default shell on catalina
