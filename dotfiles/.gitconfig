@@ -61,4 +61,11 @@
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [checkout]
-	workers = 1
+	workers = 10
+[merge "mergiraf"]
+    name = mergiraf
+    driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P
+
+# if you haven't got a global gitattributes file yet
+[core]
+    attributesfile = ~/.gitattributes

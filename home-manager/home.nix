@@ -47,6 +47,7 @@
     # ".screenrc".source = dotfiles/screenrc;
 
     ".gitconfig".source = ../dotfiles/.gitconfig;
+    ".gitattributes".source = ../dotfiles/.gitattributes;
     ".npmrc".source = ../dotfiles/.npmrc;
 
     # # You can also set the file content immediately.

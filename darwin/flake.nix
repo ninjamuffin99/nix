@@ -42,6 +42,7 @@
         pkgs.rustup
         pkgs.xcodes
         pkgs.jj
+        pkgs.mergiraf
       ];
 
       # Auto upgrade nix package and the daemon service.
