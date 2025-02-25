@@ -1,6 +1,10 @@
 [user]
 	name = Cameron Taylor
 	email = cameron.taylor.ninja@gmail.com
+[column]
+	ui = auto
+[tag]
+        sort = version:refname
 [pull]
 	rebase = merges
 [submodule]
@@ -22,15 +26,20 @@
 	autoCorrect = 10
 [merge]
 	conflictstyle = zdiff3
+[commit]
+        verbose = true
 [diff]
 	algorithm = histogram
 	submodule = log
-	colorMoved = default
+	colorMoved = true
+	mnemonicPrefix = true
+	renames = true
 [status]
 	submoduleSummary = true
 [fetch]
 	prune = true
 	prunetags = true
+	all = true
 	parallel = 0
 [core]
 	excludesfile = /Users/mofin/.gitignore
@@ -54,8 +63,10 @@
 	autoSquash = true
 	missingCommitsCheck = error
 	updateRefs = true
+	autoStash = true
 [rerere]
 	enabled = true
+	autoupdate = true
 [blame]
 	ignoreRevsFile = 
 [url "git@github.com:"]
