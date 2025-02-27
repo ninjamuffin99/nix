@@ -43,6 +43,7 @@
         pkgs.xcodes
         pkgs.jj
         pkgs.mergiraf
+        pkgs.lazygit
       ];
 
       # Auto upgrade nix package and the daemon service.
