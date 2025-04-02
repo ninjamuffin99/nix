@@ -44,6 +44,8 @@
         pkgs.jj
         pkgs.mergiraf
         pkgs.lazygit
+        pkgs.zulu23
+        pkgs.jre_minimal
       ];
 
       # Auto upgrade nix package and the daemon service.

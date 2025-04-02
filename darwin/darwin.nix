@@ -71,6 +71,7 @@
       "zsh-autosuggestions"
       "fd"
       "git-cliff"
+      "glslang"
     ];
     casks = [
       "dolphin@dev"
