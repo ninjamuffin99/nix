@@ -45,7 +45,6 @@
       "libpng"
       "libogg"
       "libvorbis"
-      "hashlink"
       "mbedtls@2"
       "nano"
       "ninja"
@@ -72,6 +71,9 @@
       "fd"
       "git-cliff"
       "glslang"
+      "go"
+      "viddy"
+      "jj"
     ];
     casks = [
       "dolphin@dev"

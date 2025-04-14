@@ -41,7 +41,6 @@
         pkgs.difftastic
         pkgs.rustup
         pkgs.xcodes
-        pkgs.jj
         pkgs.mergiraf
         pkgs.lazygit
         pkgs.zulu23
@@ -98,7 +97,6 @@
           {
             nixpkgs.overlays = [
               (import ../overlays/fish.nix)
-              (import ../overlays/jj.nix)
             ];
           }
         ];
