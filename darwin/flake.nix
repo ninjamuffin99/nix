@@ -3,7 +3,7 @@
   description = "Darwin config";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.11-darwin";
 
     nix-darwin.url = "github:LnL7/nix-darwin/nix-darwin-24.11";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
@@ -31,20 +31,13 @@
         pkgs.home-manager
         pkgs.alejandra
         pkgs.neovim
-        pkgs.fzf
         pkgs.eza
         pkgs.yt-dlp
         pkgs.zoxide
-        pkgs.bottom
         pkgs.bat
-        pkgs.htop
         pkgs.difftastic
-        pkgs.rustup
         pkgs.xcodes
         pkgs.mergiraf
-        pkgs.lazygit
-        pkgs.zulu23
-        pkgs.jre_minimal
       ];
 
       # Auto upgrade nix package and the daemon service.
