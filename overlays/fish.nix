@@ -6,7 +6,7 @@ final: prev: {
       owner = "fish-shell";
       repo = "fish-shell";
       rev = "master";
-      hash = "sha256-O5xZHXNrJMpjTA2mrTqzMtU/55UArwoc2adc0R6pVl0=";
+      hash = "sha256-Q56FLyzbc/Rpvg0lCmlMGLtJPUnTCdH5qMoVuJwcG5g=";
     };
     nativeBuildInputs =
       (oldAttrs.nativeBuildInputs or [])
