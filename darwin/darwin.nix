@@ -74,6 +74,7 @@
       "go"
       "viddy"
       "jj"
+      "openjdk"
     ];
     casks = [
       "dolphin@dev"
